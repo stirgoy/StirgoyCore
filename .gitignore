@@ -6,7 +6,9 @@ ehthumbs.db
 *.pbo
 *.bikey
 *.bisign
-Mod.cpp
+
+#infoMod
+mod.cpp
 
 #extensions
 *.dll
