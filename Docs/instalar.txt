@@ -1,9 +1,0 @@
-[ES]
-¿Cómo instalar?
----------------
-
-1) Ir a este URL: http://steamcommunity.com/sharedfiles/filedetails/?id=789398286
-2) Suscríbase al articulo del workshop
-3) Inicie Arma 3 Launcher
-4) Espere hasta que se descargue el mod (este paso debería ser automático)
-5) Asegúrese de que el mod está activado, luego haga clic en play desde el lanzador
