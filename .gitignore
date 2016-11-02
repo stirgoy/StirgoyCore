@@ -10,6 +10,10 @@ ehthumbs.db
 #extensions
 *.dll
 
+#addon docs
+*.txt
+*.html
+
 # Folder config file
 Desktop.ini
 
