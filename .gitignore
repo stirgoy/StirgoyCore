@@ -12,7 +12,7 @@ ehthumbs.db
 
 #addon docs
 *.txt
-*.html
+*.url
 
 # Folder config file
 Desktop.ini
