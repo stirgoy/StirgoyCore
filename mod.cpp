@@ -1,0 +1,14 @@
+name = "stirgoyCore";
+picture = "\stirgoyCore\Images\logo.paa";
+actionName = "Stirgoy";
+action = "http://stirgoy.esy.es/doku.php?id=addons:wiki:stirgoycore";
+logo = "\stirgoyCore\Images\logo.paa";
+logoOver = "\stirgoyCore\Images\logo.paa";
+tooltip = "stirgoyCore";
+tooltipOwned = "stirgoyCore";
+overview = "Functions and Displays";
+author = "Stirgoy";
+overviewPicture = "\stirgoyCore\Images\logo.paa";
+overviewText = "Core functions and displays";
+overviewFootnote = "Stirgoy";
+logoSmall = "\stirgoyCore\Images\logo.paa";
