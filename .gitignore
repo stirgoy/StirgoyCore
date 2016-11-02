@@ -2,10 +2,11 @@
 Thumbs.db
 ehthumbs.db
 
-#addons
+#addon
 *.pbo
 *.bikey
 *.bisign
+Mod.cpp
 
 #extensions
 *.dll
