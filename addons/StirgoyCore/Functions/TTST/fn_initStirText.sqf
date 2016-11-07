@@ -12,7 +12,7 @@ _colorArray = [	//Lista de colores
 	"color='#FFFFFF' ",		//Blanco	0
 	"color='#000000' ",		//Negro		1
 	"color='#808080' ",		//Gris		2
-	"color='#008000' ",		//Verde		3
+	"color='#22c71f' ",		//Verde		3
 	"color='#B22222' ",		//Rojo		4
 	"color='#1E90FF' ",		//Azul		5
 	"color='#FF8C00' ",		//Naranja	6
@@ -77,4 +77,3 @@ _cArray = [
 			];
 
 missionNamespace setVariable ["stirgoy_str_ARR",_cArray,true];
-

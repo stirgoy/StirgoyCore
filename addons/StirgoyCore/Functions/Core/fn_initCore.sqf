@@ -3,7 +3,7 @@
 	Stirgoy
 */
 [] spawn {
-    waitUntil {getClientStateNumber >= 9};
+    //waitUntil {getClientStateNumber >= 8};
 
     //Variables
     call compile PreprocessFileLineNumbers "StirgoyCore\Functions\variables.sqf";
@@ -15,5 +15,5 @@
 
 //server side
 if (isDedicated) then {
-    [] spawn stir_fnc_initServer;    
+    [] spawn stir_fnc_initServer;
 };
