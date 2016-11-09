@@ -16,14 +16,16 @@ if (!_existe) then
 {
     _handle = [] spawn stir_fnc_createMaster;
     waitUntil {scriptDone _handle};
+    _handle = nil;
 };
 
 _version = ["read",["Ajustes","Version"]] call _masterDB;
 
-//  Actual: 0.1    |    1/11/2016
-if (_version >= 0.1) then
+if (_version == stir_dbVer) then
 {
-    //Updater
+    _handle = [] spawn stir_fnc_updateDB;
+    waitUntil {scriptDone _handle};
+    _handle = nil;
 };
 
 _logMe = "StirgoyCore - MP Mission: " + (missionName) + " - Server name: " + (serverName);
