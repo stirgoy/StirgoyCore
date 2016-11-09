@@ -49,6 +49,8 @@ class cfgFunctions
 			class initServer {};
 			class addLog {};
 			class createMaster {};
+			class updateDB {};
+			class cLog {};
 		};
 
 	};
