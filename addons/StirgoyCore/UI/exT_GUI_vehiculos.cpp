@@ -35,7 +35,7 @@ class exT_GUI_vehiculos
 		class tit_cmb_vclas: RscText
 		{
 			idc = 1003;
-			text = "Filtro de  VehicleClass"; //--- ToDo: Localize;
+			text = "$exT_str_vcF";
 			x = 0.337122 * safezoneW + safezoneX;
 			y = 0.104116 * safezoneH + safezoneY;
 			w = 0.110306 * safezoneW;
@@ -44,7 +44,7 @@ class exT_GUI_vehiculos
 		class tit_llst_vclass: RscText
 		{
 			idc = 1004;
-			text = "VehicleClasses encontrados"; //--- ToDo: Localize;
+			text = "$exT_str_FVC";
 			x = 0.33381 * safezoneW + safezoneX;
 			y = 0.613673 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
@@ -53,7 +53,7 @@ class exT_GUI_vehiculos
 		class tit_ch_a3: RscText
 		{
 			idc = 1007;
-			text = "Agregar vehiculos Arma 3 "; //--- ToDo: Localize;
+			text = "$ext_str_aa3v";
 			x = 0.371141 * safezoneW + safezoneX;
 			y = 0.280064 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
@@ -62,7 +62,7 @@ class exT_GUI_vehiculos
 		class tit_vclas_selec: RscText
 		{
 			idc = 1005;
-			text = "VehicleClasses eliminados"; //--- ToDo: Localize;
+			text = "$ext_str_DVC";
 			x = 0.515463 * safezoneW + safezoneX;
 			y = 0.614366 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
@@ -71,7 +71,7 @@ class exT_GUI_vehiculos
 		class tit_lista_encontrados: RscText
 		{
 			idc = 1001;
-			text = "Vehiclulos permitidos"; //--- ToDo: Localize;
+			text = "$ext_str_ppvv";
 			x = 0.0392 * safezoneW + safezoneX;
 			y = 0.0666 * safezoneH + safezoneY;
 			w = 0.289689 * safezoneW;
@@ -80,7 +80,7 @@ class exT_GUI_vehiculos
 		class tit_llista_exportar: RscText
 		{
 			idc = 1002;
-			text = "Vehiclulos a exportar"; //--- ToDo: Localize;
+			text = "$ext_str_vte";
 			x = 0.670136 * safezoneW + safezoneX;
 			y = 0.0666 * safezoneH + safezoneY;
 			w = 0.289689 * safezoneW;
@@ -89,12 +89,12 @@ class exT_GUI_vehiculos
 		class tit_chk_fside: RscText
 		{
 			idc = 1008;
-			text = "Filtrar bandos "; //--- ToDo: Localize;
+			text = "$ext_str_psf";
 			x = 0.371141 * safezoneW + safezoneX;
 			y = 0.324053 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
 			h = 0.0285911 * safezoneH;
-			tooltip = "Solo se mostraran los bandos civil, independiente, blufor y opfor"; //--- ToDo: Localize;
+			tooltip = "$ext_str_psfD";
 		};
 	};
 
@@ -138,7 +138,7 @@ class exT_GUI_vehiculos
 		{
 			idc = 2400;
 			onMouseButtonClick = "['AVE'] call exT_fnc_btnHandler_veh;";
-			text = "mover a exportar"; //--- ToDo: Localize;
+			text = "$ext_str_mte";
 			x = 0.33506 * safezoneW + safezoneX;
 			y = 0.203087 * safezoneH + safezoneY;
 			w = 0.116492 * safezoneW;
@@ -156,7 +156,7 @@ class exT_GUI_vehiculos
 		{
 			idc = 2401;
 			onMouseButtonClick = "['QVE'] call exT_fnc_btnHandler_veh;";
-			text = "Borrar seleccionado"; //--- ToDo: Localize;
+			text = "$ext_str_bsel";
 			x = 0.840188 * safezoneW + safezoneX;
 			y = 0.423023 * safezoneH + safezoneY;
 			w = 0.116492 * safezoneW;
@@ -182,7 +182,7 @@ class exT_GUI_vehiculos
 		{
 			idc = 2402;
 			onMouseButtonClick = "['AVC'] call exT_fnc_btnHandler_veh;";
-			text = "Quitar VClass"; //--- ToDo: Localize;
+			text = "$ext_str_dvc";
 			x = 0.33403 * safezoneW + safezoneX;
 			y = 0.8365 * safezoneH + safezoneY;
 			w = 0.151546 * safezoneW;
@@ -192,7 +192,7 @@ class exT_GUI_vehiculos
 		{
 			idc = 2403;
 			onMouseButtonClick = "['QVC'] call exT_fnc_btnHandler_veh;";
-			text = "Agregar VClass"; //--- ToDo: Localize;
+			text = "$ext_str_avc";
 			x = 0.515463 * safezoneW + safezoneX;
 			y = 0.8365 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
@@ -232,7 +232,7 @@ class exT_GUI_vehiculos
 		{
 			idc = 2405;
 			onMouseButtonClick = "['MTAE'] call exT_fnc_btnHandler_veh;";
-			text = "Mover lista"; //--- ToDo: Localize;
+			text = "$ext_str_mall";
 			x = 0.336091 * safezoneW + safezoneX;
 			y = 0.370238 * safezoneH + safezoneY;
 			w = 0.116492 * safezoneW;
@@ -243,7 +243,7 @@ class exT_GUI_vehiculos
 			idc = 2406;
 			//onMouseButtonClick = "lbClear 1500;";
 			onMouseButtonclick = "['QTAE'] call exT_fnc_btnHandler_veh;";
-			text = "Borrar todos"; //--- ToDo: Localize;
+			text = "$ext_str_rall";
 			x = 0.840188 * safezoneW + safezoneX;
 			y = 0.46701 * safezoneH + safezoneY;
 			w = 0.116492 * safezoneW;
