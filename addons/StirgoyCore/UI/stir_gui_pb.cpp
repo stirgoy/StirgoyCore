@@ -5,7 +5,7 @@
 
 class stir_gui_pb
 {
-	idd = 77755;
+	idd = 77743;
 	name="stir_gui_pb";
 	duration = 9999999999999;
 	fadeIn = 1;

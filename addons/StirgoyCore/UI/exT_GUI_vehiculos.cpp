@@ -241,7 +241,8 @@ class exT_GUI_vehiculos
 		class btn_borrar_selected: RscButtonMenu
 		{
 			idc = 2406;
-			onMouseButtonClick = "lbClear 1500;";
+			//onMouseButtonClick = "lbClear 1500;";
+			onMouseButtonclick = "['QTAE'] call exT_fnc_btnHandler_veh;";
 			text = "Borrar todos"; //--- ToDo: Localize;
 			x = 0.840188 * safezoneW + safezoneX;
 			y = 0.46701 * safezoneH + safezoneY;

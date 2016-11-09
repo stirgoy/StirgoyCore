@@ -5,6 +5,5 @@
 
 class stirgoyCore
 {
-	//systemDate
 	version = 0.1;
 };
