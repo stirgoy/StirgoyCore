@@ -18,9 +18,10 @@ _uiDisp = uiNamespace getVariable "stir_gui_tmr";
 _timer = _uiDisp displayCtrl 1111;
 
 
-while {true} do {
+stir_timer_on = true;
 
-	stir_timer_on = true;
+while {stir_timer_on} do {
+
 	if(isNull _uiDisp) then {
 	6 cutRsc ["stir_gui_tmr","PLAIN"];
 	_uiDisp = uiNamespace getVariable "stir_gui_tmr";
@@ -28,7 +29,7 @@ while {true} do {
 	};
 
 	 if(!(alive player)) exitWith {};
-	 if((time - _stime) > (_time * 60)) exitWith {};
+	 if((time - _stime) > (_time * 60)) exitWith { stir_timer_on = false; };
 
 	 if (time - _stime >= _time/4*3) then { _timer ctrlSetTextColor [0.97,0.27,0,1]; };
 	 if (time - _stime >= _time) then { _timer ctrlSetTextColor [0.69,0.03,0,1]; };
@@ -37,5 +38,4 @@ while {true} do {
 	sleep 0.08;
 };
 
-stir_timer_on = false;
 6 cutText["","PLAIN"];

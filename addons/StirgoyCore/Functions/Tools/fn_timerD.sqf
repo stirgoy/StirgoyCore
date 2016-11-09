@@ -16,9 +16,9 @@ disableSerialization;
 _tDisplay = uiNamespace getVariable "stir_gui_tmr";
 _timer = _tDisplay displayCtrl 1111;
 
-while {true} do
+stir_timer_on = true;
+while {stir_timer_on} do
 {
-	stir_timer_on = true;
 	if(isNull _tDisplay) then
 	{
 		6 cutRsc ["stir_gui_tmr","PLAIN"];
@@ -29,11 +29,10 @@ while {true} do
 	if (time - _time >= _time/4*3) then { _timer ctrlSetTextColor [0.97,0.27,0,1]; };
 	if (time - _time >= _time/8*7) then { _timer ctrlSetTextColor [0.69,0.03,0,1]; };
 
-	if(round(_time - time) < 1 || !(alive player)) exitWith {};
+	if(round(_time - time) < 1 || !(alive player)) exitWith { stir_timer_on = false; };
 
 	_timer ctrlSetText format["%1",[(_time - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
 	sleep 0.08;
 };
 
-stir_timer_on = false;
 6 cutText["","PLAIN"];
