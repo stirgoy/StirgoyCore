@@ -4,7 +4,7 @@
 	STIR_TTST (21/10/2015)
 */
 
-if !(isNull (missionNamespace getVariable "stirgoy_str_ARR")) exitWith {};
+if !(count ( missionNamespace getVariable ["stirgoy_str_ARR",[]] ) == 0 ) exitWith {};
 //Preparamos variables para el generador de texto
 
 																// ¬ == </br>

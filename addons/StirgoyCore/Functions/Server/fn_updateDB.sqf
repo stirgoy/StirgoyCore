@@ -3,6 +3,8 @@
     Stirgoy
 */
 
+if (!isDedicated) exitWith {};
+
 private ["_masterDB","_existe","_version","_saved","_logMe"];
 
 _masterDB = ["new","Master"] call OO_INIDBI;

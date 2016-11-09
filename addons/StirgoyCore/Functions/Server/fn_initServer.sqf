@@ -3,6 +3,8 @@
     Stirgoy
 */
 
+if (!isDedicated) exitWith {};
+    
 waitUntil {getClientStateNumber >=9};
 
 private ["_masterDB","_existe","_version","_handle","_logMe"];
@@ -21,7 +23,7 @@ if (!_existe) then
 
 _version = ["read",["Ajustes","Version"]] call _masterDB;
 
-if (_version == stir_dbVer) then
+if (_version < stir_dbVer) then
 {
     _handle = [] spawn stir_fnc_updateDB;
     waitUntil {scriptDone _handle};

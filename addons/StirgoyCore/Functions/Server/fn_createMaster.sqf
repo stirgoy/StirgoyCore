@@ -3,6 +3,8 @@
     Stirgoy
 */
 
+if (!isDedicated) exitWith {};
+
 private ["_creaDB","_versionn","_testReg","_creaLog","_time","_ok"];
 
 _versionn = (getNumber (configFile / "StirgoyCore" / "version"));

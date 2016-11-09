@@ -2,7 +2,10 @@
     fn_addLog.sqf
     Stirgoy
 */
-param ["_log","_modo","_save","_timer","_log","_regID","_ss","_save","_PUID","_temp0"];
+
+if (!isDedicated) exitWith {};
+
+private ["_log","_modo","_save","_timer","_log","_regID","_ss","_save","_PUID","_temp0"];
 
 _save = param [0,"",[""]];
 _PUID = param [1,objNull,[objNull]];
