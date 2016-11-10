@@ -6,7 +6,7 @@
 			STIRGOYCORE
 		-->
 		<Container name="core">
-			<Key ID="str_stir_Yes">
+			<Key ID="STR_stir_Yes">
 				<Original>yes</Original>
 				<English>yes</English>
 				<Czech>ano</Czech>
@@ -20,9 +20,20 @@
 				<Korean>네</Korean>
 				<Japanese>はい</Japanese>
 			</Key>
-			<Key ID="str_stir_No">
+			<Key ID="STR_stir_No">
 				<Original>no</Original>
 			</Key>
+
+			<Key ID="STR_dbf_kickst">
+				<Original>You have been kicked</Original>
+				<Spanish>Has sido expulsado</Spanish>
+			</Key>
+			<Key ID="STR_dbf_kickdsc">
+				<Original>Respect the rules, if you have a bad day, take a break</Original>
+				<Spanish>Respeta las normas, si tienes un mal dia tomate un descanso</Spanish>
+			</Key>
+
+
 		</Container>
 
 		<!--

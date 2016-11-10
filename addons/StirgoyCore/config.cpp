@@ -6,3 +6,4 @@
 #include "UI\exT_GUI_pb.cpp"
 #include "UI\exT_GUI_vehiculos.cpp"
 #include "cfgRsc.hpp"
+#include "CfgDebriefing.cpp"
