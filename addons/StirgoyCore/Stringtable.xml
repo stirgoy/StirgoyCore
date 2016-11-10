@@ -29,72 +29,70 @@
 			EXTRACTR
 		-->
 		<Container name="extractr">
-			<Key ID="exT_str_vcF">
+			<Key ID="STR_ext_vcF">
 				<Original>VehicleClass filter</Original>
 				<English>VehicleClass filter</English>
 				<Spanish>Filtro de  VehicleClass</Spanish>
 			</Key>
-			<Key ID="exT_str_FVC">
+			<Key ID="STR_ext_FVC">
 				<Original>Finded VehicleClasses</Original>
 				<English>Finded VehicleClasses</English>
 				<Spanish>VehicleClasses encontrados</Spanish>
 			</Key>
-			<Key ID="ext_str_aa3v">
+			<Key ID="STR_ext_aa3v">
 				<original>Add Arma 3 vehicles</original>
 				<English>Add Arma 3 vehicles</English>
 				<Spanish>Agregar vehiculos Arma 3 </Spanish>
 			</Key>
-			<Key ID="ext_str_DVC">
+			<Key ID="STR_ext_DVC">
 				<original>Deleted vehicleClasses</original>
 				<English>Deleted vehicleClasses</English>
 				<Spanish>VehicleClasses eliminados</Spanish>
 			</Key>
-			<Key ID="ext_str_ppvv">
+			<Key ID="STR_ext_ppvv">
 				<original>Vehicles allowed</original>
 				<English>Vehicles allowed</English>
 				<Spanish>Vehiclulos permitidos</Spanish>
 			</Key>
-			<Key ID="ext_str_vte">
+			<Key ID="STR_ext_vte">
 				<original>Vehices to export</original>
 				<English>Vehices to export</English>
 				<Spanish>Vehiclulos a exportar</Spanish>
 			</Key>
-			<Key ID="ext_str_psf">
+			<Key ID="STR_ext_psf">
 				<original>Side filter</original>
 				<English>Side filter</English>
 				<Spanish>Filtrar bandos</Spanish>
 			</Key>
-			<Key ID="ext_str_psfD">
+			<Key ID="STR_ext_psfD">
 				<original>Only the civilian, independent, blufor and opfor sides will be shown</original>
 				<English>Only the civilian, independent, blufor and opfor sides will be shown</English>
 				<Spanish>Solo se mostraran los bandos civil, independiente, blufor y opfor</Spanish>
 			</Key>
-			<Key ID="ext_str_mte">
+			<Key ID="STR_ext_mte">
 				<original>Move to export</original>
 				<English>Move to export</English>
 				<Spanish>Mover a exportar</Spanish>
 			</Key>
-			<Key ID="ext_str_bsel">
+			<Key ID="STR_ext_bsel">
 				<original>Delete selected</original>
 				<English>Delete selected</English>
 				<Spanish>Borrar seleccionado</Spanish>
 			</Key>
-			<Key ID="ext_str_avc">
 				<original>Add VClass</original>
 				<English>Add VClass</English>
 				<Spanish>Agregar VClass</Spanish>
 			</Key>
-			<Key ID="ext_str_dvc">
 				<original>Delete VClass</original>
 				<English>Delete VClass</English>
 				<Spanish>Quitar VClass</Spanish>
 			</Key>
-			<Key ID="ext_str_mall">
+			<Key ID="STR_ext_mall">
 				<original>Move all</original>
 				<English>Move all</English>
 				<Spanish>Mover todo</Spanish>
 			</Key>
-			<Key ID="ext_str_rall">
+			<Key ID="STR_ext_rall">
 				<original>Remove all</original>
 				<English>Remove all</English>
 				<Spanish>Borrar todos</Spanish>
