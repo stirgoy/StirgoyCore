@@ -79,10 +79,12 @@
 				<English>Delete selected</English>
 				<Spanish>Borrar seleccionado</Spanish>
 			</Key>
+			<Key ID="STR_ext_avc2">
 				<original>Add VClass</original>
 				<English>Add VClass</English>
 				<Spanish>Agregar VClass</Spanish>
 			</Key>
+			<Key ID="STR_ext_dvcc">
 				<original>Delete VClass</original>
 				<English>Delete VClass</English>
 				<Spanish>Quitar VClass</Spanish>
