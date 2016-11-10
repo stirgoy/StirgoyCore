@@ -32,19 +32,21 @@ class exT_GUI_vehiculos
 			h = 0.32327 * safezoneH;
 			colorBackground[] = {0,0,0,0.2};
 		};
+		/*
 		class tit_cmb_vclas: RscText
 		{
 			idc = 1003;
-			text = "$exT_str_vcF";
+			text = $STR_ext_vcF;
 			x = 0.337122 * safezoneW + safezoneX;
 			y = 0.104116 * safezoneH + safezoneY;
 			w = 0.110306 * safezoneW;
 			h = 0.0285911 * safezoneH;
 		};
+		*/
 		class tit_llst_vclass: RscText
 		{
 			idc = 1004;
-			text = "$exT_str_FVC";
+			text = $STR_ext_FVC;
 			x = 0.33381 * safezoneW + safezoneX;
 			y = 0.613673 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
@@ -53,7 +55,7 @@ class exT_GUI_vehiculos
 		class tit_ch_a3: RscText
 		{
 			idc = 1007;
-			text = "$ext_str_aa3v";
+			text = $STR_ext_aa3v;
 			x = 0.371141 * safezoneW + safezoneX;
 			y = 0.280064 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
@@ -62,7 +64,7 @@ class exT_GUI_vehiculos
 		class tit_vclas_selec: RscText
 		{
 			idc = 1005;
-			text = "$ext_str_DVC";
+			text = $STR_ext_DVC;
 			x = 0.515463 * safezoneW + safezoneX;
 			y = 0.614366 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
@@ -71,7 +73,7 @@ class exT_GUI_vehiculos
 		class tit_lista_encontrados: RscText
 		{
 			idc = 1001;
-			text = "$ext_str_ppvv";
+			text = $STR_ext_ppvv;
 			x = 0.0392 * safezoneW + safezoneX;
 			y = 0.0666 * safezoneH + safezoneY;
 			w = 0.289689 * safezoneW;
@@ -80,7 +82,7 @@ class exT_GUI_vehiculos
 		class tit_llista_exportar: RscText
 		{
 			idc = 1002;
-			text = "$ext_str_vte";
+			text = $STR_ext_vte;
 			x = 0.670136 * safezoneW + safezoneX;
 			y = 0.0666 * safezoneH + safezoneY;
 			w = 0.289689 * safezoneW;
@@ -89,12 +91,12 @@ class exT_GUI_vehiculos
 		class tit_chk_fside: RscText
 		{
 			idc = 1008;
-			text = "$ext_str_psf";
+			text = $STR_ext_psf;
 			x = 0.371141 * safezoneW + safezoneX;
 			y = 0.324053 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
 			h = 0.0285911 * safezoneH;
-			tooltip = "$ext_str_psfD";
+			tooltip = $STR_ext_psfD;
 		};
 	};
 
@@ -138,12 +140,13 @@ class exT_GUI_vehiculos
 		{
 			idc = 2400;
 			onMouseButtonClick = "['AVE'] call exT_fnc_btnHandler_veh;";
-			text = "$ext_str_mte";
+			text = $STR_ext_mte;
 			x = 0.33506 * safezoneW + safezoneX;
 			y = 0.203087 * safezoneH + safezoneY;
 			w = 0.116492 * safezoneW;
 			h = 0.0307905 * safezoneH;
 		};
+		/*
 		class cmb_vclass: RscCombo
 		{
 			idc = 2100;
@@ -152,11 +155,12 @@ class exT_GUI_vehiculos
 			w = 0.11443 * safezoneW;
 			h = 0.0285911 * safezoneH;
 		};
+		*/
 		class btn_borrar: RscButtonMenu
 		{
 			idc = 2401;
 			onMouseButtonClick = "['QVE'] call exT_fnc_btnHandler_veh;";
-			text = "$ext_str_bsel";
+			text = $STR_ext_bsel;
 			x = 0.840188 * safezoneW + safezoneX;
 			y = 0.423023 * safezoneH + safezoneY;
 			w = 0.116492 * safezoneW;
@@ -182,7 +186,7 @@ class exT_GUI_vehiculos
 		{
 			idc = 2402;
 			onMouseButtonClick = "['AVC'] call exT_fnc_btnHandler_veh;";
-			text = "$ext_str_dvc";
+			text = $STR_ext_dvcc;
 			x = 0.33403 * safezoneW + safezoneX;
 			y = 0.8365 * safezoneH + safezoneY;
 			w = 0.151546 * safezoneW;
@@ -192,7 +196,7 @@ class exT_GUI_vehiculos
 		{
 			idc = 2403;
 			onMouseButtonClick = "['QVC'] call exT_fnc_btnHandler_veh;";
-			text = "$ext_str_avc";
+			text = $STR_ext_avc2;
 			x = 0.515463 * safezoneW + safezoneX;
 			y = 0.8365 * safezoneH + safezoneY;
 			w = 0.152577 * safezoneW;
@@ -232,7 +236,7 @@ class exT_GUI_vehiculos
 		{
 			idc = 2405;
 			onMouseButtonClick = "['MTAE'] call exT_fnc_btnHandler_veh;";
-			text = "$ext_str_mall";
+			text = $STR_ext_mall;
 			x = 0.336091 * safezoneW + safezoneX;
 			y = 0.370238 * safezoneH + safezoneY;
 			w = 0.116492 * safezoneW;
@@ -243,7 +247,7 @@ class exT_GUI_vehiculos
 			idc = 2406;
 			//onMouseButtonClick = "lbClear 1500;";
 			onMouseButtonclick = "['QTAE'] call exT_fnc_btnHandler_veh;";
-			text = "$ext_str_rall";
+			text = $STR_ext_rall;
 			x = 0.840188 * safezoneW + safezoneX;
 			y = 0.46701 * safezoneH + safezoneY;
 			w = 0.116492 * safezoneW;
