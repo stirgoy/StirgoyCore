@@ -5,16 +5,18 @@
 
 if (!isDedicated) exitWith {};
 
-private ["_log","_save","_customDB","_saved","_saverLog","_ids","_logMe","_newR"];
+private ["_log","_save","_customDB","_saved","_saverLog","_ids","_logMe","_newR","_tik"];
 
 _log = param [0,"",[""]];
 _save = param [1,"",[""]];
+_putDate = param [2,true,[false]];
 if ( _log == "" || _save == "" ) exitWith {};
 
 _newR = false;
 _customDB = ["new",_log] call OO_INIDBI;
 _esta = "exists" call _customDB;
 
+//nuevo arhibo
 if (!_esta) then
 {
     _saved = ["write",["Ajustes","ID",0]] call _customDB;
@@ -24,6 +26,14 @@ if (!_esta) then
     _newR = true;
 };
 
+//incluir fecha
+if (_putDate) then
+{
+    _tik = ["largo"] call stir_fnc_sysDate;
+    _save = _tik + "  -  " + _save;
+};
+
+//log
 _ids = ["read",["Ajustes","ID"]] call _customDB;
 _saverLog = ["write",["Log",_ids,_save]] call _customDB;
 
