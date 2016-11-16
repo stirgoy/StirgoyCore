@@ -1,6 +1,7 @@
 /*
     fn_addLog.sqf
     Stirgoy
+    AddonLog.ini
 */
 
 if (!isDedicated) exitWith {};
@@ -9,7 +10,7 @@ private ["_log","_modo","_save","_timer","_log","_regID","_ss","_save","_PUID","
 
 _save = param [0,"",[""]];
 _PUID = param [1,objNull,[objNull]];
-_modo = param [2,0,[0]];    //para updates
+_modo = param [2,0,[0]];
 if (_save == "") exitWith {};
 if ((_modo != 0) && (isNull _PUID)) exitWith {};
 

@@ -1,6 +1,7 @@
 /*
     fn_cLog.sqf
     Stirgoy
+    custom logs
 */
 
 if (!isDedicated) exitWith {};
