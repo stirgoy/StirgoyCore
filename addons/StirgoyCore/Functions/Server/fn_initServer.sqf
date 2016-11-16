@@ -5,6 +5,9 @@
 
 if (!isDedicated) exitWith {};
 
+stir_server = false;
+publicVariable "stir_server";
+
 waitUntil {getClientStateNumber >=6};   //ROLES asignados
 
 private ["_masterDB","_existe","_version","_handle","_logMe"];
