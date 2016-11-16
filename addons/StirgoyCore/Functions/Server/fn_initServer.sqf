@@ -4,13 +4,15 @@
 */
 
 if (!isDedicated) exitWith {};
-    
-waitUntil {getClientStateNumber >=9};
+
+waitUntil {getClientStateNumber >=6};   //ROLES asignados
 
 private ["_masterDB","_existe","_version","_handle","_logMe"];
 
+//descarga de variables de GUI
 stir_timer_on = nil;
 
+//hilo con DB
 _masterDB = ["new","Master"] call OO_INIDBI;
 _existe = "exists" call _masterDB;
 
@@ -21,6 +23,7 @@ if (!_existe) then
     _handle = nil;
 };
 
+//versionado y actuallizacion de DB
 _version = ["read",["Ajustes","Version"]] call _masterDB;
 
 if (_version < stir_dbVer) then
@@ -30,5 +33,10 @@ if (_version < stir_dbVer) then
     _handle = nil;
 };
 
+//carga de eventos de servidor
+stir_server_EH_PD = ["someId", "onPlayerDisconnected", "_this call stir_fnc_scriptDesconectados;"] call BIS_fnc_addStackedEventHandler;
+stir_server_EH_PC = ["someId", "onPlayerConnected", "_this call stir_fnc_scriptConectados;"] call BIS_fnc_addStackedEventHandler;
+
+//registro
 _logMe = "StirgoyCore - MP Mission: " + (missionName) + " - Server name: " + (serverName);
 [_logMe] call stir_fnc_addLog;

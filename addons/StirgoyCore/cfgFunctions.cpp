@@ -53,5 +53,12 @@ class cfgFunctions
 			class cLog {};
 		};
 
+		class f_server_events
+		{
+			file = "StirgoyCore\Functions\Server\Eventos";
+			class scriptDesconectados {};
+			class scriptConectados {};
+		};
+
 	};
 };
