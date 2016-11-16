@@ -40,3 +40,6 @@ SEHVOPC = addMissionEventHandler ["PlayerConnected", {_this call stir_fnc_script
 //registro
 _logMe = "StirgoyCore - MP Mission: " + (missionName) + " - Server name: " + (serverName);
 [_logMe] call stir_fnc_addLog;
+
+stir_server = true;
+publicVariable "stir_server";
