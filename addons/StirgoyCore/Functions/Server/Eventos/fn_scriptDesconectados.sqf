@@ -16,6 +16,10 @@ _uidd = _this select 1;
 _nombre = _this select 2;
 _srvID = _this select 4;
 
+if (isNil "_uidd") exitWith {};
+if (isNil "_nombre") exitWith {};
+if (isNil "_srvID") exitWith {};
+
 //fecha y hora
 _reg = ["largo"] call stir_fnc_sysDate;
 
