@@ -20,4 +20,4 @@ _ok = ["write",["Ajustes","version",_versionn]] call _creaDB;
 _ok =["write",["Ajustes","ID",0]] call _creaLog;
 _ok =["write",["Ajustes","Creado",_time]] call _creaLog;
 _ok =["write",["Log","ID0",_testReg]] call _creaLog;
-//_ok = ["write",["Ajustes","Version",0.1]] call _masterDB;
+//_ok = ["write",["Ajustes","Version",0.2]] call _masterDB;
