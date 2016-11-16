@@ -4,8 +4,10 @@
 
 ####Core mod & tools for Arma 3.
 
-####El addon utiliza: 
+####El addon utiliza:
 INIDBI2 Copyright (C) 2013-2016 Nicolas BOITEUX. [INIDBI License](http://www.gnu.org/licenses/)
+
+real_date extension (KillzoneKid)
 
 [Wiki](http://stirgoy.esy.es/doku.php?id=addons:wiki:stirgoycore)
 
