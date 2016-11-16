@@ -35,6 +35,7 @@ class cfgFunctions
 			file = "StirgoyCore\Functions\Tools";
 			class timerD {};
 			class timerA {};
+			class fuera {};
 		};
 
 		class f_lists
