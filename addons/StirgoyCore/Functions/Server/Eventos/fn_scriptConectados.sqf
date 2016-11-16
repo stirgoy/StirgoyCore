@@ -19,6 +19,7 @@ _srvID = _this select 4;
 if (isNil "_uidd") exitWith {};
 if (isNil "_nombre") exitWith {};
 if (isNil "_srvID") exitWith {};
+if (_nombre == "__SERVER__") exitWith {};
 
 //fecha y hora
 _reg = ["largo"] call stir_fnc_sysDate;

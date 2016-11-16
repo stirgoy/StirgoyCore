@@ -34,8 +34,8 @@ if (_version < stir_dbVer) then
 };
 
 //carga de eventos de servidor
-stir_server_EH_PD = ["someId", "onPlayerDisconnected", "_this call stir_fnc_scriptDesconectados;"] call BIS_fnc_addStackedEventHandler;
-stir_server_EH_PC = ["someId", "onPlayerConnected", "_this call stir_fnc_scriptConectados;"] call BIS_fnc_addStackedEventHandler;
+SEHVOPD = addMissionEventHandler ["HandleDisconnect", {_this call stir_fnc_scriptDesconectados;false;}];
+SEHVOPC = addMissionEventHandler ["PlayerConnected", {_this call stir_fnc_scriptConectados;}];
 
 //registro
 _logMe = "StirgoyCore - MP Mission: " + (missionName) + " - Server name: " + (serverName);

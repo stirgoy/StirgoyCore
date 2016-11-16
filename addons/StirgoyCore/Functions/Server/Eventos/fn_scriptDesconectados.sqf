@@ -5,20 +5,25 @@
 
 if !(isDedicated) exitWith {};
 
-private ["_masterDB1","_fuera","_pjl","_existe","_oks","_reg","_nReg","_linea","_nombre","_uidd","_srvID","_escri"];
+private ["_masterDB1","_fuera","_pjl","_existe","_oks","_reg","_nReg","_linea","_nombre","_uidd","_srvID","_escri","_unidad"];
 
 _masterDB1 = ["new","Master"] call OO_INIDBI;
 _fuera = ["read",["Ajustes","playersLog"]] call _masterDB1;
 if (_fuera == 0) exitWith {};
 
 //parametros de entrada
-_uidd = _this select 1;
-_nombre = _this select 2;
-_srvID = _this select 4;
+_unidad = _this select 0;
+_srvID = _this select 1;
+_uidd = _this select 2;
+_nombre = _this select 3;
 
+if (isNull _unidad) exitWith {};
 if (isNil "_uidd") exitWith {};
 if (isNil "_nombre") exitWith {};
 if (isNil "_srvID") exitWith {};
+if (_nombre == "__SERVER__") exitWith {};
+
+_ownerID = owner _unidad;
 
 //fecha y hora
 _reg = ["largo"] call stir_fnc_sysDate;
@@ -37,7 +42,7 @@ if !(_existe) then
 };
 
 //preparamos
-_escri = format ["%1  ID %4 - Disconnected - %2 - %3 ",_reg,_nombre,_uidd,_srvID];
+_escri = format ["%1  ID %4 - Disconnected - %2 - %3 ",_reg,_nombre,_uidd,_ownerID];
 _linea = ["read",["Ajustes","ID"]] call _pjl;
 
 //registro
