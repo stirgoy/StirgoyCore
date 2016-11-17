@@ -52,6 +52,7 @@ class cfgFunctions
 			class createMaster {};
 			class updateDB {};
 			class cLog {};
+			class eCode {};
 		};
 
 		class f_server_events
